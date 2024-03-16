@@ -1,38 +1,148 @@
 /* ubuntu-mono-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
-    src: url('/ubuntu-mono-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/ubuntu-mono-v17-latin-regular.woff2') format('woff2');
 }
 /* ubuntu-mono-italic - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Ubuntu Mono';
     font-style: italic;
     font-weight: 400;
-    src: url('/ubuntu-mono-v17-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/ubuntu-mono-v17-latin-italic.woff2') format('woff2');
 }
 /* ubuntu-mono-700 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 700;
-    src: url('/ubuntu-mono-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/ubuntu-mono-v17-latin-700.woff2') format('woff2');
 }
 /* ubuntu-mono-700italic - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Ubuntu Mono';
     font-style: italic;
     font-weight: 700;
-    src: url('/ubuntu-mono-v17-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/ubuntu-mono-v17-latin-700italic.woff2') format('woff2');
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.success{
+    background-color: #4caf50;
+    color: #fff;
+}
+.danger{
+    background-color: #f44336;
+    color: #fff;
+}
+.primary{
+    background-color: #2196f3;
+    color: #fff;
+}
+.warning{
+    background-color: #ff9800;
+    color: #fff;
+}
+
 
 body{
     font-family: 'Ubuntu Mono', monospace;
     color: #333;
     background-color: #f4f4f4;
+    padding: 20px;
+}
+nav{
+    padding: 20px;
+    margin: -20px -20px 20px -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196f3;
+}
+
+.nav-toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+    .menu a {
+        display: none;
+    }
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+    .block{
+        background-color: #f4f4f4;
+        width: 80%;
+        height: 2px;
+    }
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+hr{
+    margin: 20px 0;
+    background-color: #333;
+}
+button{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #333;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+.card{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+input[type="submit"]{
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    outline: none;
 }
