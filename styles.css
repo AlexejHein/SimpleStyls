@@ -93,6 +93,22 @@ nav{
         height: 2px;
     }
 }
+#sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    left: -250px;
+    width: 150px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s ease;
+}
+
+#sidebar.active {
+    left: 0;
+}
 a{
     color: #fff;
     text-decoration: none;
