@@ -28,13 +28,13 @@
     <a href="#">Contact</a>
 </nav>
 
-<h1>Ubuntu-mono</h1>
-<h2>Ubuntu-mono</h2>
-<h3>Ubuntu-mono</h3>
-<h4>Ubuntu-mono</h4>
-<h5>Ubuntu-mono</h5>
-<h6>Ubuntu-mono</h6>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h1>H1 | Ubuntu-mono</h1>
+<h2>H2 | Ubuntu-mono</h2>
+<h3>H3 | Ubuntu-mono</h3>
+<h4>H4 | Ubuntu-mono</h4>
+<h5>H5 | Ubuntu-mono</h5>
+<h6>H6 | Ubuntu-mono</h6>
+<p>P | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
 <hr>
 
@@ -44,13 +44,40 @@
     <button class="danger">Mono</button>
     <button class="warning">Mono</button>
     <button class="primary">Mono</button>
+<!-- outline -->
+    <button class="outline">Mono</button>
+    <button class="success-outline">Mono</button>
+    <button class="danger-outline">Mono</button>
+    <button class="warning-outline">Mono</button>
+    <button class="primary-outline">Mono</button>
 </div>
 
 <hr>
 
-<form>
-    <input type="text" placeholder="Mono">
-    <input type="checkbox">
+<form class="mono-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Ihr Name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Ihre Email">
+    <input type="submit" value="Absenden">
+</form>
+
+<hr>
+
+<form class="mono-form">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Ihr Name">
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ihre Email">
+        <label for="text">Textfeld:</label>
+        <textarea id="text" name="text" placeholder="Ihr Text"></textarea>
+    </div>
+    <input type="submit" value="Absenden">
 </form>
 
 <script src="main.js"></script>
