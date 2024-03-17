@@ -28,6 +28,30 @@
     <a href="#">Contact</a>
 </nav>
 
+<div class="slider">
+    <div class="slide active">
+        <img src="img/bgJumbo.webp" alt="Bild 1">
+        <div class="info">Text für Bild 1</div>
+    </div>
+    <div class="slide">
+        <img src="img/bild2.webp" alt="Bild 2">
+        <div class="info">Text für Bild 2</div>
+    </div>
+    <!-- Füge hier weitere Slides hinzu -->
+</div>
+
+<div class="jumbotron">
+    <div class="jumbotron-content">
+        <h1>Willkommen</h1>
+        <p>Dies ist ein Jumbotron mit einem Platzhalterbild.</p>
+    </div>
+</div>
+
+
+
+<button class="prev">Vorherige</button>
+<button class="next">Nächste</button>
+
 <h1>H1 | Ubuntu-mono</h1>
 <h2>H2 | Ubuntu-mono</h2>
 <h3>H3 | Ubuntu-mono</h3>
@@ -54,7 +78,7 @@
 
 <hr>
 
-<form class="mono-form">
+<form class="mono-form w300">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Ihr Name">
     <label for="email">Email:</label>
@@ -64,20 +88,25 @@
 
 <hr>
 
-<form class="mono-form">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Ihr Name">
-        <label for="vorname">Vorname:</label>
-        <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname">
+<form class="mono-form grid-h w600">
+    <div class="form-col">
+        <div class="form-div">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name">
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname">
+        </div>
+        <div class="form-div">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ihre Email">
+            <label for="text">Textfeld:</label>
+            <textarea id="text" name="text" placeholder="Ihr Text"></textarea>
+        </div>
     </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Ihre Email">
-        <label for="text">Textfeld:</label>
-        <textarea id="text" name="text" placeholder="Ihr Text"></textarea>
+    <div class="form-col">
+        <button class="primary">Absenden</button>
+        <button class="danger">Abbrechen</button>
     </div>
-    <input type="submit" value="Absenden">
 </form>
 
 <script src="main.js"></script>
