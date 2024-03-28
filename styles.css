@@ -76,6 +76,61 @@ nav{
         height: 2px;
     }
 }
+
+/*----------navbar--------------------*/
+.navigation {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 200px; /* Für die Demonstration zentriert */
+}
+
+.nav-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2; /* Stellt sicher, dass der Kreis über den Menüpunkten liegt */
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initial versteckt */
+}
+
+.nav-items li {
+    position: absolute;
+    width: 60px; /* Größe der Menüpunkte anpassen */
+    height: 60px;
+    background-color: #17a2b8; /* Hintergrundfarbe der Menüpunkte */
+    color: white; /* Textfarbe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0; /* Initial unsichtbar */
+}
+
+.nav-items li a {
+    color: white; /* Farbe der Links */
+    text-decoration: none;
+}
+
+
+/*-------------------------------------*/
 .content{
     display: block;
 }
