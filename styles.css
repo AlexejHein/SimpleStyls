@@ -76,6 +76,9 @@ nav{
         height: 2px;
     }
 }
+.content{
+    display: block;
+}
 #sidebar {
     position: fixed;
     display: flex;
@@ -87,6 +90,7 @@ nav{
     height: 100%;
     background: #333;
     transition: left 0.3s ease;
+    z-index: 20;
 }
 
 #sidebar.active {
@@ -99,6 +103,7 @@ a{
 /* JUMBOTRON */
 .jumbotron {
     background-image: url('img/bgJumbo.webp');
+    margin: 30px;
     background-size: cover;
     height: 300px;
     display: flex;
@@ -114,8 +119,12 @@ a{
 /* SLIDER */
 
 .slider {
-    position: relative;
+    position: relative; /* oder 'relative' */
     max-width: 100%;
+    height: 100vh;
+    z-index: auto;
+    float: none;
+    display: block;
 }
 
 .slide {
@@ -139,7 +148,11 @@ img {
 
 .info {
     position: absolute;
-    right: 0;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    right: 40px;
+    top: 50%;
     animation: textIn 2s forwards;
 }
 
